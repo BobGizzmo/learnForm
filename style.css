@@ -1,17 +1,15 @@
 @font-face {
-	font-family: "Roman";
-	src:url('font/Roman.ttf');
+	font-family: "AUGUSTUS";
+	src:url('font/AUGUSTUS.ttf');
 }
 
 body{
 	margin-top: -50px;
 	width: 100%;
-	background-color: #E2E2E2;
-	background-image: url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fwallpapercave.com%2Fwp%2F42fqIFl.jpg');
-	font-family: "Source Sans Pro", sans-serif;
 	overflow-x: hidden;
+	font-family: 'AUGUSTUS';
 }
-}
+
 
 form{
 	padding: 0px;
@@ -22,26 +20,36 @@ form{
 h1{
 	margin-left: -100px;
 	margin-right: -100px;
-	font-family: 'Roman';
+	font-family: 'AUGUSTUS';
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow:1px 1px 2px white;
 	line-height: 200px;
+	font-size: 5em;
+	font-weight: 800;
+	color:#003399;
+}
+
+h2 {
+	font-size:2em;
+	color: #3366CC;
+	text-align: center;
 }
 
 .titres {
 	font-size: 25px;
 	font-weight: bold;
+	color: #3399FF;
 }
 .questions2{
+	margin-left: 20px;
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
+	color: white;
 }
+
 .radioContainer{
-	background-color: rgba(206, 171, 107, 0.5);
-	border:2px inset #664113;
-	border-radius:10px 50px 50px 10px;
 	padding: 0 30px 0 5px;
 	justify-content: space-between;
 	display: flex;
@@ -50,14 +58,16 @@ h1{
 input[type="radio"]{
 	display: none;
 }
+
 label{
 	margin-right: 20px;
-	border: 2px outset black;
+	border: 2px #0f2d4c outset;
 	border-radius: 5px;
 	padding: 10px 20px;
-	background-color: rgba(206, 171, 107, 0.5);	
+	background-color: #3399FF;
+}	
 
 input[type="radio"]:checked+label{
-	border: 2px inset black;
-	background-color: rgba(206, 171, 107, 1);
+	border: 2px inset #0f2d4c;
+	background-color: #003399;
 }
