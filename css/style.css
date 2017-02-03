@@ -36,6 +36,10 @@ h2 {
 	text-align: center;
 }
 
+p {
+	margin-bottom: 20px;
+}
+
 .titres {
 	font-size: 25px;
 	font-weight: bold;
@@ -70,7 +74,7 @@ label{
 }	
 
 input[type="radio"]:checked+label{
-	border: 2px inset #0f2d4c;
+	border: 2px inset #130474;
 	background-color: #003399;
 }
 
@@ -89,7 +93,7 @@ input[type="radio"]:checked+label{
 }
 
 .curve:after {
-	top: 11px;
+	top: 8px;
 	right: 3px;
 	transform: rotate(5deg);
 	box-shadow: -7px 6px 12px #333;
@@ -253,3 +257,4 @@ input[type="radio"]:checked+label{
 	top: 58px;
 	z-index: -10;
 }
+
