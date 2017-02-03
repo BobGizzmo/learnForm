@@ -39,14 +39,18 @@ h2 {
 .titres {
 	font-size: 25px;
 	font-weight: bold;
-	color: #3399FF;
+	color: white;
+	margin-top: 10px;
 }
+
 .questions2{
 	margin-left: 20px;
 	margin-top: 50px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	color: white;
+	background-color: #3399FF;
 }
 
 .radioContainer{
@@ -61,8 +65,6 @@ input[type="radio"]{
 
 label{
 	margin-right: 20px;
-	border: 2px #0f2d4c outset;
-	border-radius: 5px;
 	padding: 10px 20px;
 	background-color: #3399FF;
 }	
@@ -70,4 +72,184 @@ label{
 input[type="radio"]:checked+label{
 	border: 2px inset #0f2d4c;
 	background-color: #003399;
+}
+
+#bloc1 {
+	position: relative;
+	display: inline-block;
+	box-shadow: 1px 1px 4px #333;
+}
+
+#bloc1:after, #bloc1:before {
+	content: " ";
+	position: absolute;
+	width: 50%;
+	height: 100px;
+	z-index: -10;
+}
+
+.curve:after {
+	top: 11px;
+	right: 3px;
+	transform: rotate(5deg);
+	box-shadow: -7px 6px 12px #333;
+}
+
+#bloc2 {
+	width: 20%;
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc2:after, #bloc2:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: -10;
+}
+
+.laterals:before {
+	top: 15px;
+	left: 0px;
+	height: 130px;
+	border-radius: 12px / 65px;
+	box-shadow: 0 0 20px #333;
+}
+
+#age {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 25px;
+	padding-left: 10px;
+	font-size: 1.2em;
+	font-family: 'AUGUSTUS';
+}
+
+.bloc3 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+.bloc3:after, .bloc3:before {
+	content: " ";
+	position: absolute;
+	width: 90%;
+	height: 50px;
+	z-index: -10;
+}
+
+.curve2:before {
+	top: 55px;
+	left: 5px;
+	transform: rotate(-5deg);
+	box-shadow: 7px 6px 15px #333;
+}
+
+.curve2:after {
+	top: 55px;
+	right: 5px;
+	transform: rotate(5deg);
+	box-shadow: -7px 6px 15px #333;
+}
+
+#bloc4 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc4:after, #bloc4:before {
+	content: " ";
+	position: absolute;
+	width: 90%;
+	height: 85px;
+	z-index: -10;
+}
+
+.horizontal:before {
+	top: 0px;
+	left: 5%;
+	height: 50px;
+	border-radius: 125px / 12px;
+	box-shadow: 0 0 8px #555;
+}
+
+.horizontal:after { 
+	bottom: 0px;
+	border-radius: 125px / 12px;
+	box-shadow: 0 0 8px #565656;
+}
+
+#bloc5 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc5:after, #bloc5:before {
+	content: " ";
+	position: absolute;
+	width: 10%;
+	height: 85px;
+	z-index: -10;
+} 
+
+.lateral2:before {
+	top: 5px;
+	left: 8px;
+	box-shadow: -9px 3px 10px #555;
+	transform: rotate(-5deg);
+}
+
+#bloc6 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc6:after, #bloc6:before {
+	content: " ";
+	position: absolute;
+	width: 90%;
+	height: 85px;
+	z-index: -10;
+}
+
+#bloc7 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc7:after, #bloc7:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	z-index: -10;
+}
+
+#bloc8 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc8:after, #bloc8:before {
+	content: " ";
+	position: absolute;
+	width: 90%;
+	height: 85px;
+	z-index: -10;
+}
+
+#bloc9 {
+	position: relative;
+	box-shadow: 0px 1px 4px #333;
+}
+
+#bloc9:after, #bloc9:before {
+	content: " ";
+	position: absolute;
+	width: 10%;
+	height: 60%;
+	top: 58px;
+	z-index: -10;
 }
