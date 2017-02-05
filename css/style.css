@@ -74,8 +74,9 @@ label{
 }	
 
 input[type="radio"]:checked+label{
-	border: 2px inset #130474;
-	background-color: #003399;
+	border: 2px solid white;
+	border-radius: 45%;
+	background-color: #3399FF;
 }
 
 #bloc1 {
