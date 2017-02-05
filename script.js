@@ -1,6 +1,14 @@
 $(document).ready(function(){
+	var dieu = ["Zeus", "Aphrodite", "Apollon", "Poséidon", "Hestia", "Arès", "Artémis", "Héra", "Athéna", "Héphaïstos", "Hermès", "Hadès"];
+	dieu.sort(function() { return 0.5 - Math.random() });
+
 	$("#age").on("input", function(){
-		$(".questions3.2").show(2000);
+		if(!isNaN($("#age").val()) && $("#age").val() != null){
+			$("#erreurSaisie").css("display", "none");
+			$(".questions3.2").show(2000);
+		}else{
+			$("#erreurSaisie").css("display", "block");
+		}	
 	});
 	for(i = 1; i <= 30; i++){
 		if(i <= 2){
@@ -33,7 +41,7 @@ $(document).ready(function(){
 			});
 		}else if(i <= 30){
 			$("#"+i).click(function(){
-				alert("Felicitations, tu es le dieu plouc !");
+				alert("Felicitations, tu es le dieu "+dieu[0]+" !");
 			});
 		}						
 	}

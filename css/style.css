@@ -46,7 +46,10 @@ p {
 	color: white;
 	margin-top: 10px;
 }
-
+#erreurSaisie{
+	color: red;
+	display: none;
+}
 .questions2{
 	margin-left: 20px;
 	margin-top: 50px;
