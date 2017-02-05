@@ -6,7 +6,7 @@
 		<title>Formulaire des dieux</title>
 	</head>
 	<body>
-		<form>
+		<form onsubmit="return false">
 			<h1>Quelle divinité es-tu ?</h1>
 			<h2>Remplis ce formulaire pour savoir quel Dieu ou Déesse tu es</h2>
 			<div class="questions2 curve" id="bloc1">		
@@ -15,12 +15,12 @@
 				<input type="radio" name="sexe" value="femme" id="2"><label for="2">Déesse</label>
 			</div>
 
-			<div class="questions2 laterals" id="bloc2">		
+			<div class="questions2 questions3 1 laterals" id="bloc2">		
 				<p class="titres">Quel âge as tu ?</p>
 				<input type="text" name="age" placeholder="20" maxlength="2" id="age">
 			</div>
 
-			<div class="questions2 curve2 bloc3">		
+			<div class="questions2 questions3 2 curve2 bloc3">		
 				<p class="titres">Tu es du genre ?</p>
 				<div class="radioContainer">
 						<p><input type="radio" name="caractere" value="casanier" id="3"><label for="3">A rester chez toi</label></p>
@@ -31,7 +31,7 @@
 				</div>	
 			</div>
 
-			<div class="questions2 horizontal" id="bloc4">		
+			<div class="questions2 questions3 3 horizontal" id="bloc4">		
 				<p class="titres">Tu es plutôt ?</p>
 				<div class="radioContainer">
 					<p><input type="radio" name="attraits" value="nature" id="7"><label for="7">Proche de la nature</label></p>
@@ -41,7 +41,7 @@
 				</div>		
 			</div>
 
-			<div class="questions2 lateral2" id="bloc5">		
+			<div class="questions2 questions3 4 lateral2" id="bloc5">		
 				<p class="titres">Ton mari/Ta femme a enfanté un être illégitime, que fais tu ?</p>
 				<div class="radioContainer">
 					<div>
@@ -54,7 +54,7 @@
 					</div>	
 				</div>	
 			</div>
-			<div class="questions2 curve2" id="bloc6">		
+			<div class="questions2 questions3 5 curve2" id="bloc6">		
 				<p class="titres">Quel est ton animal mythologique préféré(e) ?</p>
 				<div class="radioContainer">
 					<div>
@@ -68,7 +68,7 @@
 				</div>		
 			</div>
 
-			<div class="questions2 laterals" id="bloc7">		
+			<div class="questions2 questions3 6 laterals" id="bloc7">		
 				<p class="titres">Quel est le métier que tu aurais aimé faire pendant cette période ?</p>
 				<div class="radioContainer">
 					<p><input type="radio" name="metier" value="forgeron" id="19"><label for="19">Forgeron</label></p>
@@ -78,7 +78,7 @@
 				</div>		
 			</div>
 
-			<div class="questions2 horizontal" id="bloc8">		
+			<div class="questions2 questions3 7 horizontal" id="bloc8">		
 				<p class="titres">Quelle est la ville que tu préfère ?</p>
 				<div class="radioContainer">
 					<div>
@@ -91,7 +91,7 @@
 					</div>
 				</div>		
 			</div>
-			<div class="questions2 curve" id="bloc9">		
+			<div class="questions2 questions3 8 curve" id="bloc9">		
 				<p class="titres">Quel serai ton arme de prédiléction ?</p>
 				<div class="radioContainer">
 					<p><input type="radio" name="arme" value="epee" id="27"><label for="27"> Epée</label></p>
@@ -100,7 +100,9 @@
 					<p><input type="radio" name="arme" value="trident" id="30"><label for="30"> Trident</label></p>
 				</div>	
 			</div>
-
+			<div id="divButton">
+				<p class="questions2" id="next">suivant</p>
+			</div>	
 		</form>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
